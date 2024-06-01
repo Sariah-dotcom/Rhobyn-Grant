@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Cormorant+Infant:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Cormorant+SC:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@400;700;900&family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Cormorant+SC:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
     <title>Rhobyn Grant</title>
 </head>
@@ -13,33 +13,52 @@
 
     <!-- Navigation Menu -->
     <div id="nav-bar">
-        <div class="links">
+        <img src="Images/decor/flowers.png" class="nav-decor" alt="flowers">
+        <div class="logo">
+            <img src="Images\logo.png" alt="site logo">
+        </div>
+
+        <div class="nav-items">
             <ul>
                 <li><a href="#">Home</a></li>
                 <li><a href="#">About</a></li>
                 <li><a href="#">Music</a></li>
-                <li><a href="index.html"><div class="logo"><img src="Images\logo-v1.png" alt="logo"></div></a></li>
                 <li><a href="#">Shop</a></li>
-                <li><a href="#">Youtube</a></li>
                 <li><a href="#">Contact</a></li>
             </ul>
         </div>
     </div>
-    
 
     <!-- Hero Section -->
     <section id="hero">
-
-        <div class="hero-left">
-            <h1 style="margin-bottom: 3rem; font-size: 60px; font-weight: 400;">Lorem ipsum dolor <br>amet consectetur</h1>
-            <button class="cta-1">CTA 1</button>
+        <div class="hero-caption">
+            <h1>Life is a <br> faith thing</h1>
+            <button class="primary-btn">let's grow</button>
         </div>
 
-        <div class="img-changer">
-            <img src="Images\rhobyn-3.png" alt="rhobyn-image-1">
+        <div class="hero-imgs">
+
+            <div class="rhobyn-headshot">
+                <img src="Images\rhobyn-headshot.png" alt="rhobyn-headshot">
+            </div>
+    
+            <div class="hero-decor">
+                <img src="Images\decor\flowers.png" alt="flowers">
+            </div>
         </div>
-        <img src="Images/decor/decor-lines.png" alt="" class="hero-decor">
+        
     </section>
+
+    <!-- Scripture banner -->
+    <section id="banner">
+        <p>Charm is deceptive, and beauty does not last; but a woman who fears the LORD will be greatly praised.</p>
+    </section>
+
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js" integrity="sha512-7eHRwcbYkK4d9g/6tD/mhkf++eoTHwpNM9woBxtPUBWm67zeAfFC+HrdoE2GanKeocly/VxeLvIqwvCdk7qScg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js" integrity="sha512-onMTRKJBKz8M1TnqqDuGBlowlH0ohFzMXYRNebz+yOcc5TQr/zAKsthzhuv0hiyUKEiQEQXEynnXCvNTOk50dg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <script src="script.js"></script>
+
 </body>
 </html>

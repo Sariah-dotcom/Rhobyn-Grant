@@ -1,19 +1,33 @@
-function imageChanger() {
-    const rhobynImg = document.querySelector('.img-changer img');
-    const originalSrc = rhobynImg.src; // Save the original image src
 
-    // Set an interval to change the image every 2 seconds
-    setInterval(() => {
-        // Change the image to 'Images/rhobyn-2.png' after 1 second
-        setTimeout(() => {
-            rhobynImg.src = 'Images/rhobyn-2.png';
-        }, 1000);
 
-        // Revert to the original image after another 1 second
-        setTimeout(() => {
-            rhobynImg.src = originalSrc;
-        }, 2000);
-    }, 2000); // Repeat every 2 seconds
-}
+// Hero animations
+const tl1 = gsap.timeline(
+    {defaults:{duration:0.75, ease:"Power3.easeOut"}}
+);
 
-imageChanger();
+tl1.fromTo(
+    ".nav-items, .logo, .nav-decor, .hero-imgs",
+    {
+        opacity:0,
+        y:300
+    },
+    {
+        opacity:1,
+        y:0,
+        duration:2,
+        stagger : 0.3
+    }
+);
+
+tl1.fromTo(
+    ".hero-caption button",
+    {
+        opacity:0,
+        y:-100
+    },
+    {
+        opacity:1,
+        y:0,
+        ease: "elastic(1.5,1)"
+    }
+)

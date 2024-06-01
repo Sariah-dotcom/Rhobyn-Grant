@@ -1,124 +1,132 @@
-/* General Styling */
-*
-{
-    margin: 0;
+* {
     box-sizing: border-box;
+    margin: 0;
 }
 
-h1{font-family: "Cormorant Infant", serif;color: #1E1E1E;}
-
-p,h2 {font-family: "Be Vietnam Pro", sans-serif;}
-
-a
-{
-    font-family: "Cormorant SC", serif;
-    font-size: 1.5rem;
-    color: #1E1E1E;
+body {
+    overflow-x: hidden;
 }
 
-img
-{
-    height: 100%;
-    width: 100%;
+h1 {
+    font-family: "Cinzel Decorative", serif;
+    color: #E64D86;
+    font-weight: 300;
 }
 
+p {
+    font-family: "Cormorant SC", serif;;
+}
 
+button {
+    height: 2.5rem;
+    width: 7rem;
+    border-radius: 2rem;
+    border: none;
+    font-family: "Cormorant Garamond", serif;
+    background-color: #E64D86;
+    color: white;
+
+}
+
+button:hover {
+    cursor: pointer;
+    background-color: #EC994D ;
+}
+/* Colors */
+/* Ligt Pink : #FFEFEF
+    Dark Pink : #E64D86
+    Green : #94A92C
+    Coral : #EC994D
+ */
 
 /* Navigation */
-.logo
-{
-    height:10rem;
-    width:10rem;
-    /* border: 1px solid red; */
-}
 
-#nav-bar
-{
-    height: 7rem;
-    width: 100%;
-    background-color: #FFF0F0;
-    /* position: fixed; */
-}
-
-.links ul
-{
+#nav-bar {
+    max-height: 7rem;
+    min-width: 100%;
+    padding: 1rem;
+    background-color: #FFEFEF;
     display: flex;
-    justify-content: center;
     align-items: center;
 }
 
-.links ul li
-{
+.nav-decor {
+    margin-top: -10rem;
+    z-index: 2;
+}
+
+.logo img{
+    min-height: 3rem;
+    max-width: 12rem;
+}
+
+.nav-items{
+    position: relative;
+    min-width: 45%;
+}
+
+.nav-items ul {
+    display: flex;
+    justify-content: space-between;
     list-style: none;
-    margin-right: 4rem;
 }
 
-.links ul li a
-{
+.nav-items ul li a {
     text-decoration: none;
-}
-
-.links ul li a:hover
-{
-    color: #FA6275;
-    /* font-weight: bold; */
+    font-family: "Cinzel Decorative", serif;
+    color:#E64D86;
 }
 
 /* Hero */
-#hero
-{
-    height: 82vh;
-    width: 100%;
-    background-color: #FFF0F0;
+#hero {
     display: flex;
-    justify-content: space-between; /* Push items to the ends of the container */
-    align-items: center; 
+    align-items: flex-start;
+    justify-content: space-between;
+    min-height: 85vh;
+    max-width: 100%;
+    background-color: #FFEFEF;
+    position: relative; 
 }
 
-.hero-left
-{
+.hero-caption {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+}
+
+.hero-caption h1 {
+    font-size: 5rem;
     text-align: center;
-    width: 100%;
 }
 
-.img-changer
-{
+.hero-imgs {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
     position: absolute;
-    height: 25rem;
-    width: 45rem;
-    /* border: 1px solid red; */
-    right: 0;
     bottom: 0;
+    right: 0;
 }
 
-.hero-decor
-{
-    height: 100px;
-    width: 100px;
+.rhobyn-headshot {
+    margin-top: 1rem; /* Adjust the margin to achieve the desired spacing */
+    z-index: 0; /* Ensure it appears above the decor */
+}
+
+.hero-decor {
     position: absolute;
-    right: 220px;
-    top:240px;
-}
-
-button
-{
-    border: 3px solid #FA6275;
-    width: 100px;
-    height: 40px;
-    color: #FA6275;
-    font-family: "Cormorant SC", serif;
-    font-weight: bold;
-    background-color: #FFF0F0;
-    transition: 0.4 ease-in;
-    position: relative; /* Add relative positioning to the container */
     z-index: 1;
+    left: 5rem;
+    top: 5rem;
 }
 
-button:hover
-{
-    cursor: pointer;
-    background-color: #FA6275;
+#banner {
+    background-color: #94A92C;
     color: white;
-    z-index: 1;
+    min-height: 5rem;
+    padding: 2rem;
+    text-align: center;
 }
 
