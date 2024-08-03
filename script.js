@@ -79,7 +79,8 @@ tl3.fromTo(
         opacity:1,
         y:0,
         stagger: 0.2
-    }
+    },
+    "<40%"
 );
 
 ScrollTrigger.create({
