@@ -118,7 +118,7 @@ nav {
 }
 
 .hero-content h1 {
-    font-size: 5rem;
+    font-size: 4rem;
 }
 
 .decor img {
@@ -263,7 +263,7 @@ footer p {
 }
 
 hr {
-    background-color: #E64D86;
+    border-top: 1px solid #E64D86;
     width: 70%;
     margin: 0.7rem 0rem;
 }
