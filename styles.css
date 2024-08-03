@@ -1,4 +1,361 @@
 * {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #FFFAF6;
+}
+
+
+.rotate-img img {
+    height: 5rem;
+    width: 5rem;
+}
+
+p {
+    font-family: "Inter", sans-serif;
+    font-size: 1.1rem;
+    color: #413f3f;
+}
+
+h1 {
+    font-size: 3.5rem;
+}
+
+h1, h2 {
+    font-family: "Cinzel Decorative", serif;
+    color: #E64D86;
+    font-weight: 300;
+}
+
+button {
+    padding: 1rem 1.7rem;
+    border-radius: 2rem;
+    border: none;
+    background-color: #E64D86;
+    color: #FFFAF6;
+}
+
+section {
+    overflow-x: hidden;
+}
+
+
+/* Navigation */
+
+.logo img {
+    height: 10rem;
+    width: 10rem;
+}
+
+.nav-links {
+    display: none;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0rem 1rem;
+}
+
+.menu {
+    position: fixed;
+    top: 0;
+    right: -300px;
+    width: 250px;
+    height: 100%;
+    background-color: #E64D86;
+    color: white;
+    transition: right 0.3s;
+    padding: 1rem;
+    overflow-y: auto;
+    z-index: 20;
+}
+  
+.close {
+    font-size: 3rem;
+    cursor: pointer;
+    text-align: right;
+    margin-bottom: 1rem;
+}
+  
+.menu ul {
+    list-style-type: none;
+    padding: 0;
+}
+  
+.menu ul li {
+    margin: 2rem 0;
+}
+  
+.menu ul li a {
+  color: white;
+  text-decoration: none;
+  font-size: 2rem;
+  font-family: "Inter", sans-serif;
+}
+
+/* Hero */
+#hero {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    /* min-height: 60vh; */
+    text-align: center;
+    /* padding: 1rem; */
+}
+
+.hero-content {
+    padding: 6rem 0rem 0rem;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    align-items: center;
+    
+}
+
+.hero-content h1 {
+    font-size: 5rem;
+}
+
+.decor img {
+    width: 100vw;
+}
+
+.down-arrow{
+    padding-top: 3rem;
+}
+
+.decor {
+    margin-top: -12rem;
+}
+
+/* Banner */
+#banner {
+    background-color: #94A92C;
+    padding: 3rem;
+    text-align: center;
+    margin-top: -0.3rem;
+}
+
+#banner p {
+    color: #FFFFFF;
+}
+
+/* Welcome */
+#welcome {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 5rem 1rem 3rem 1rem;
+    text-align: center;
+    gap: 2rem;
+}
+.arches {
+    display: flex;
+    justify-content: center;
+}
+
+.arch {
+    height: 20rem;
+    width: 10rem;
+    border-radius: 5rem 5rem 0rem 0rem;
+    background-color: #ccc;
+    z-index: 1;
+}
+
+.bouquet {
+    position: absolute;
+    /* height: 10rem; */
+    width: 15rem;
+    margin-top: 12rem;
+    z-index: 0;
+}
+
+#youtube, #ig {
+    margin-bottom: 7rem;
+}
+
+#youtube {
+    background-color: #FFEFEF;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+    padding: 2rem 1rem 0rem 1rem;
+    text-align: center;
+}
+
+#youtube img {
+    width: 100vw;
+}
+
+/* IG */
+#ig{
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+.bento-grid-container {
+    display: grid;
+    height: 50vh;
+    grid-template-columns: repeat(6,1fr);
+    grid-template-rows: repeat(12,1fr);
+    gap: 0.5rem;
+    padding: 0.5rem;
+}
+
+.grid-item {
+    background-color: #ccc;
+    border-radius: 0.5rem;
+}
+
+.a {
+    grid-row: 1 / 8;
+    grid-column: 1 / 5;
+}
+
+.b {
+    grid-row: 1 / 4;
+    grid-column: 5 / 7;
+}
+
+.c {
+    grid-row: 4 / 9;
+    grid-column: 5 / 7;
+}
+
+.d {
+    grid-row: 8 / 12;
+    grid-column: 1 / 5;
+}
+
+.e {
+    grid-row: 9 / 12;
+    grid-column: 5 / 6;
+}
+
+.f {
+    grid-row: 9 / 12;
+    grid-column: 6 / 7;
+}
+
+/* Footer */
+footer {
+    background-color: #FFEFEF;
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+footer p {
+    font-size: 0.7rem;
+}
+
+.icons {
+    display: flex;
+    gap: 1rem;
+}
+
+hr {
+    background-color: #E64D86;
+    width: 70%;
+    margin: 0.7rem 0rem;
+}
+
+/* footer .logo img {
+    height: 5rem;
+    width: 9rem;
+} */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* * {
     box-sizing: border-box;
     margin: 0;
 }
@@ -14,7 +371,8 @@ h1 {
 }
 
 p {
-    font-family: "Cormorant SC", serif;;
+    font-family: "Cormorant SC", serif;
+    font-size: 1.1rem;
 }
 
 button {
@@ -25,6 +383,7 @@ button {
     font-family: "Cormorant Garamond", serif;
     background-color: #E64D86;
     color: white;
+    font-size: 0.9rem;
 
 }
 
@@ -32,22 +391,19 @@ button:hover {
     cursor: pointer;
     background-color: #EC994D ;
 }
-/* Colors */
-/* Ligt Pink : #FFEFEF
-    Dark Pink : #E64D86
-    Green : #94A92C
-    Coral : #EC994D
- */
 
-/* Navigation */
 
 #nav-bar {
     max-height: 7rem;
     min-width: 100%;
     padding: 1rem;
-    background-color: #FFEFEF;
+    
     display: flex;
     align-items: center;
+}
+
+.hamburger-menu {
+    display: none;
 }
 
 .nav-decor {
@@ -55,7 +411,7 @@ button:hover {
     z-index: 2;
 }
 
-.logo img{
+.logo img, .logo-footer img{
     min-height: 3rem;
     max-width: 12rem;
 }
@@ -65,7 +421,7 @@ button:hover {
     min-width: 45%;
 }
 
-.nav-items ul {
+.nav-items ul{
     display: flex;
     justify-content: space-between;
     list-style: none;
@@ -77,15 +433,15 @@ button:hover {
     color:#E64D86;
 }
 
-/* Hero */
+
 #hero {
     display: flex;
     align-items: flex-start;
     justify-content: space-between;
     min-height: 85vh;
     max-width: 100%;
-    background-color: #FFEFEF;
     position: relative; 
+    overflow: hidden;
 }
 
 .hero-caption {
@@ -111,8 +467,7 @@ button:hover {
 }
 
 .rhobyn-headshot {
-    margin-top: 1rem; /* Adjust the margin to achieve the desired spacing */
-    z-index: 0; /* Ensure it appears above the decor */
+    margin-top: 1rem;
 }
 
 .hero-decor {
@@ -130,3 +485,289 @@ button:hover {
     text-align: center;
 }
 
+
+#about {
+    min-height: 120vh;
+    max-width: 100%;
+}
+.about-content {
+    display: flex;
+    padding-top: 5rem;
+}
+
+.about-left{
+    width: 50%;
+    padding: 4rem;
+}
+
+.about-left h1 {
+    font-size: 3rem;
+}
+
+.about-left p {
+    width: 80%;
+}
+
+.about-right {
+    width: 50%;
+    padding: 1rem 8rem;
+}
+
+.btn-container {
+    margin-top: 2rem;
+    display: flex;
+    gap: 2rem;
+}
+
+.arch, .rhobyn-img img {
+    border-radius: 500px 500px 0 0;
+    height: 26rem;
+    width: 16rem;
+    position: absolute;
+}
+
+.arch {
+    border: 5px solid #E64D86;
+}
+
+.r1 {
+    margin: 1rem 0 0 -1rem;
+}
+
+.r2 {
+    margin: 3rem 0 0 -1.5rem;
+}
+
+.a2 {
+    margin-top: 5rem;
+    margin-left: 12rem;
+}
+
+
+#youtube-area {
+    min-height: 70vh;
+    background-color: #FFEFEF;
+    padding: 7rem 3rem 3rem 3rem;
+    display: flex;
+    align-items: center;
+}
+
+.youtube-content {
+    display: flex;
+}
+
+.youtube-left {
+    padding: 1rem;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    z-index: 2;
+}
+
+.youtube-right {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+    padding-right: 5rem;
+    z-index: 2;
+}
+
+.youtube-left button {
+    margin-top: 3rem;
+}
+
+.video-wrapper {
+    height: 25rem;
+    width: 25rem;
+}
+
+.wave {
+    margin-top: -15rem;
+}
+
+
+#contact {
+    min-height: 100vh;
+    padding: 4rem;
+    margin-bottom: 10rem;
+}
+
+.contact-content {
+    display: flex;
+}
+
+.contact-content h1 {
+    font-size: 3rem;
+}
+
+.contact-left {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+form, .input-container {
+    display: flex;
+    flex-direction: column;
+}
+
+form {
+    gap: 3rem;
+}
+
+.message-input {
+    height: 10rem;
+    border: 1px solid #E64D86;
+}
+
+.contact-form {
+    padding: 4rem 2rem 2rem 2rem;
+    height: 90vh;
+    width: 65%;
+    background-color: #FFEFEF;
+    border-radius: 3rem;
+    font-family: "Cormorant Garamond", serif;
+    color: #E64D86;
+    font-size: 1.2rem;
+}
+
+label {
+    margin-bottom: 0.7rem;
+}
+
+.contact-form button {
+    margin: auto;
+}
+
+.contact-right {
+    width: 50%;
+    padding: 1rem;
+    margin-top: 5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.instagram-handle {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    margin-right: auto;
+    margin-left: 3rem;
+}
+
+.instagram-handle p a{
+    color: #EC994D;
+    font-weight: 400;
+}
+
+.grid-container {
+    display: grid;
+    height: 20rem;
+    grid-template-columns: auto auto;
+    gap: 0.5rem;
+    width: 80%;
+}
+
+.grid-item {
+    background-color: #ccc;
+}
+
+.input-area{
+    background-color: #FFEFEF;
+    border: none;
+}
+
+#footer {
+    background-color: #FFEFEF;
+    height: 20vh;
+    display: flex;
+    justify-content: space-between;
+    padding: 2rem;
+    align-items: center;
+}
+
+@media(max-width:430px){
+    body {
+        overflow-x: hidden;
+    }
+    .nav-decor,.nav-items{
+        display: none;
+    }
+
+
+    #hero, #nav-bar {
+        padding: 1rem;
+        width: 100vw;
+    }
+
+    .logo{
+        height: 5rem;
+        width: 2rem;
+    }
+
+    .hamburger-menu {
+        display: block;
+        margin-left: auto;
+    }
+
+    .hero-caption {
+        margin-top: 8rem;
+    }
+
+    .hero-caption button {
+        display: none;
+    }
+
+    .hero-caption h1 {
+        font-size: 5rem;
+    }
+
+    #about, .about-content {
+        height: 150vh;
+    }
+
+    .about-left,.about-right{
+        width: 100%;
+        gap: 0rem;
+    }
+
+    .about-right {
+        padding: 0rem;
+    }
+
+    .about-left p {
+        text-align: center;
+        width: 100%;
+    }
+
+    .about-content {
+        flex-direction: column;
+    }
+
+    #youtube-area {
+        padding: 0;
+    }
+
+    .youtube-content {
+        flex-direction: column;
+    }
+
+    .youtube-left,.youtube-right {
+        width: 100%;
+        padding: 0;
+    }
+
+    .youtube-left{
+        text-align: center;
+        padding-top: 1rem;
+    }
+
+    .youtube-left button {
+        margin: auto;
+    }
+}
+ */
